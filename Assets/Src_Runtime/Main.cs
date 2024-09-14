@@ -8,8 +8,16 @@ namespace LevelSample {
 
         [SerializeField] int stage;
 
+        [SerializeField] AssetsCore assetsCore;
+
         void Awake() {
             Debug.Log("Main.Awake");
+
+            // ==== CTOR ====
+            assetsCore.Ctor();
+
+            // ==== INIT ====
+            assetsCore.Init();
         }
 
         void Update() {
@@ -19,16 +27,19 @@ namespace LevelSample {
         }
 
         void EnterGame(int stage) {
-            Debug.Log("Main.EnterGame: " + stage);
+            
+            bool has = assetsCore.Stage_TryGet(stage, out StageTM tm);
+            if (!has) {
+                Debug.LogError("Main.EnterGame: Stage not found: " + stage);
+                return;
+            }
+
             // 1. 创建场景里的机关: GearEntity
             // 2. 主角
             // 3. 背景山
             // 4. 播放
-            if (stage == 1) {
+            Debug.Log("TODO: 创建机关");
 
-            } else if (stage == 2) {
-
-            }
         }
 
     }

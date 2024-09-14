@@ -9,3 +9,4 @@
 
 >> 最重要的事
 1. 通过 EM, 将数据保存成 TM
+2. 保存时一定要 EditorUtility.SetDirty(so) 

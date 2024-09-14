@@ -29,7 +29,10 @@ namespace LevelSample {
                 gearTMs[i] = em.tm;
             }
 
+            // 只是保存到内存里, 不是硬盘
+            // SetDirty
             so.tm.gears = gearTMs;
+            EditorUtility.SetDirty(so);
         }
 
     }
