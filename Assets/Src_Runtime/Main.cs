@@ -20,6 +20,10 @@ namespace LevelSample {
 
         void EnterGame(int stage) {
             Debug.Log("Main.EnterGame: " + stage);
+            // 1. 创建场景里的机关: GearEntity
+            // 2. 主角
+            // 3. 背景山
+            // 4. 播放
             if (stage == 1) {
 
             } else if (stage == 2) {
