@@ -38,6 +38,12 @@ namespace LevelSample {
             // 2. 主角
             // 3. 背景山
             // 4. 播放
+            GearSpawnerTM[] gears = tm.gears;
+            for (int i = 0; i < gears.Length; i += 1) {
+                GearSpawnerTM gearSpawner = gears[i];
+                GearEntity entity = Factory.Gear_CreateBySpawner(assetsCore, gearSpawner);
+                // 存储
+            }
             Debug.Log("TODO: 创建机关");
 
         }

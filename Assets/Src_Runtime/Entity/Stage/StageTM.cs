@@ -9,10 +9,10 @@ namespace LevelSample {
     [Serializable]
     public struct StageTM {
 
-        public int stageTypeID;
+        public int typeID;
 
         // 机关是什么, 摆在哪里, 面向哪里, 数值是多少, 数量有多少个
-        public GearTM[] gears;
+        public GearSpawnerTM[] gears;
 
     }
 

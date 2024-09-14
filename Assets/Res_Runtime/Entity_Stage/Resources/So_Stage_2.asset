@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7334f5cdbe9e78469e485d91135346c, type: 3}
+  m_Name: So_Stage_2
+  m_EditorClassIdentifier: 
+  tm:
+    typeID: 2
+    gears:
+    - so: {fileID: 11400000, guid: 8165b2640da3c144993232412daa42df, type: 2}
+      position: {x: 12.62, y: 0.36, z: -0.59000003}
+      rotation: {x: -0, y: 7.2599993, z: -0}
+      isHpModifiable: 0
+      hp: 0
+    - so: {fileID: 11400000, guid: 3b03684bccd7cf044acfd8121a900752, type: 2}
+      position: {x: 12.35, y: -0.81, z: 0.11}
+      rotation: {x: 346.73, y: -0, z: 0}
+      isHpModifiable: 0
+      hp: 0

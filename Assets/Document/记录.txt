@@ -1,6 +1,7 @@
 >> 生成关卡时
 1. 物体的原型一样
 2. 物体的坐标和面向不一样, 包括其他数值
+以上是通过 SpawnerTM + TM(SO) 实现
 
 >> Entity
 1. EM, Editor Model, 属于 Editor 程序集, 运行时不可获取它, 编译时也会丢失

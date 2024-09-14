@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7070397a1dc45b4ba6c31ee657d3999, type: 3}
+  m_Name: So_Gear_3_Plane
+  m_EditorClassIdentifier: 
+  tm:
+    typeID: 3
+    typeName: Plane
+    moveSpeed: 0
+    hpMax: 1
+    modPrefab: {fileID: 7477650584919946484, guid: b813e0f65c85ed84c8cd94a259b10aa0, type: 3}
