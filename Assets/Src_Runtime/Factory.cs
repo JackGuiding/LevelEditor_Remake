@@ -11,6 +11,9 @@ namespace LevelSample {
             if (spawnerTM.isHpModifiable) {
                 gear.hp = spawnerTM.hp;
             }
+            if (spawnerTM.isTipsModifiable) {
+                gear.Tips_Set(spawnerTM.tipsText);
+            }
             return gear;
         }
 
@@ -41,6 +44,9 @@ namespace LevelSample {
             gearEntity.moveSpeed = tm.moveSpeed;
             gearEntity.hp = tm.hpMax;
             gearEntity.hpMax = tm.hpMax;
+
+            // - Tips
+            gearEntity.Tips_Show(tm.isTips);
 
             return gearEntity;
         }

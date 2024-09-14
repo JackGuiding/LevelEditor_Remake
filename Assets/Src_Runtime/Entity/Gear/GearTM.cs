@@ -15,6 +15,9 @@ namespace LevelSample {
 
         public GameObject modPrefab;
 
+        // - Tips
+        public bool isTips;
+
     }
 
 }

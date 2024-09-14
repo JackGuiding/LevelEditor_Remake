@@ -5,7 +5,8 @@ namespace LevelSample {
 
     public class StageEntity {
 
-        // 一关里的机关
+        // 不这么做
+        public GearEntity[] gears;
 
     }
 

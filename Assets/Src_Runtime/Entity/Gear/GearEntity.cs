@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 namespace LevelSample {
 
     public class GearEntity : MonoBehaviour {
 
         [SerializeField] public Transform body;
+
+        [SerializeField] TextMeshPro txt_tips;
 
         public float moveSpeed;
 
@@ -24,6 +27,14 @@ namespace LevelSample {
 
         public void Mod_Init(GameObject mod) {
             this.mod = mod;
+        }
+
+        public void Tips_Show(bool isShow) {
+            txt_tips.gameObject.SetActive(isShow);
+        }
+
+        public void Tips_Set(string txt) {
+            txt_tips.text = txt;
         }
 
     }

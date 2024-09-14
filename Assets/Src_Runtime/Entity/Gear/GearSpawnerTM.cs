@@ -14,6 +14,9 @@ namespace LevelSample {
         public bool isHpModifiable;
         public int hp;
 
+        public bool isTipsModifiable;
+        public string tipsText;
+
     }
 
 }
