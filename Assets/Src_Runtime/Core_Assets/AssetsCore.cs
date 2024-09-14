@@ -13,6 +13,7 @@ namespace LevelSample {
         public void Ctor() {
             entities = new Dictionary<string, GameObject>();
             stages = new Dictionary<int, StageSO>();
+
             gears = new Dictionary<int, GearSO>();
         }
 
@@ -71,6 +72,10 @@ namespace LevelSample {
                 tm = default;
                 return false;
             }
+        }
+
+        public void Gear_Set(int typeID, GearTM tm) {
+
         }
 
     }

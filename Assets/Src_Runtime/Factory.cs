@@ -24,7 +24,8 @@ namespace LevelSample {
                 return null;
             }
 
-            has = assetsCore.Gear_TryGet(typeID, out GearTM tm);
+            GearTM tm; // 栈上开了个新的, 值拷贝
+            has = assetsCore.Gear_TryGet(typeID, out tm);
             if (!has) {
                 Debug.LogError("Factory.Gear_Create: Gear not found: " + typeID);
                 return null;
